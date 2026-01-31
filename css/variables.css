@@ -1,0 +1,44 @@
+/* Design tokens - THE R3D KEY CONTRACTING brand */
+:root {
+  /* Brand colors */
+  --color-primary: #C41E3A;
+  --color-accent: #84CC16;
+  --color-white: #FFFFFF;
+  /* Legacy / UI (kept for compatibility; primary/navy used for contrast) */
+  --color-trust-blue: #C41E3A;
+  --color-navy: #1F2F46;
+  --color-light-gray: #E0E0E0;
+  --color-dark-text: #111827;
+  --color-muted-text: #4B5563;
+
+  /* Spacing scale */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+
+  /* Border radius */
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+
+  /* Shadows */
+  --shadow-subtle: 0 2px 8px rgba(31, 47, 70, 0.08);
+  --shadow-medium: 0 4px 16px rgba(31, 47, 70, 0.12);
+
+  /* Container */
+  --container-max: 1120px;
+  --container-padding-mobile: 16px;
+  --container-padding-desktop: 24px;
+
+  /* Typography */
+  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-logo: "Orbitron", var(--font-sans);
+  --font-heading: "Orbitron", var(--font-sans);
+  --font-size-base: 16px;
+  --line-height-base: 1.6;
+}

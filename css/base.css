@@ -1,0 +1,85 @@
+/* Base styles - mobile-first */
+body {
+  font-family: var(--font-sans);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+  color: var(--color-dark-text);
+  background-color: var(--color-white);
+}
+
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--container-padding-mobile);
+  padding-right: var(--container-padding-mobile);
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding-left: var(--container-padding-desktop);
+    padding-right: var(--container-padding-desktop);
+  }
+}
+
+h1, h2, h3 {
+  font-family: var(--font-heading);
+  font-weight: 900;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+}
+
+h1 { font-size: clamp(1.75rem, 4vw, 2.5rem); }
+h2 { font-size: clamp(1.5rem, 3vw, 2rem); }
+h3 { font-size: clamp(1.25rem, 2.5vw, 1.5rem); }
+
+/* Orbitron Black for titles and labels */
+.section-title h2,
+.quote-card-title,
+.vertical-video-label,
+.contact-info-label,
+.project-card-title,
+.project-card-location,
+.footer-section h4,
+.badge {
+  font-family: var(--font-heading);
+  font-weight: 900;
+  letter-spacing: 0.02em;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-trust-blue);
+  transition: opacity 0.2s ease, text-decoration-color 0.2s ease;
+}
+
+a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+a:focus-visible {
+  outline: 2px solid var(--color-trust-blue);
+  outline-offset: 2px;
+}
+
+.mt-1 { margin-top: var(--space-1); }
+.mt-2 { margin-top: var(--space-2); }
+.mt-3 { margin-top: var(--space-4); }
+.mt-4 { margin-top: var(--space-5); }
+.mt-5 { margin-top: var(--space-6); }
+.mt-6 { margin-top: var(--space-7); }
+.mt-7 { margin-top: var(--space-8); }
+
+.mb-1 { margin-bottom: var(--space-1); }
+.mb-2 { margin-bottom: var(--space-2); }
+.mb-3 { margin-bottom: var(--space-4); }
+.mb-4 { margin-bottom: var(--space-5); }
+.mb-5 { margin-bottom: var(--space-6); }
+.mb-6 { margin-bottom: var(--space-7); }
+.mb-7 { margin-bottom: var(--space-8); }
+
+.text-muted {
+  color: var(--color-muted-text);
+}
