@@ -123,6 +123,15 @@
   color: var(--color-trust-blue);
 }
 
+/* When menu is open on home, remove header backdrop-filter so the fixed nav drawer
+   is positioned relative to the viewport and fills the full height (not clipped by header). */
+@media (max-width: 767px) {
+  body.nav-open.page-home .site-header {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+}
+
 /* Home page: lime green accents */
 .page-home .hero h1 {
   position: relative;
