@@ -1,0 +1,9 @@
+# Normalize line endings: checkout with CRLF on Windows, store as LF in repo
+* text=auto eol=lf
+
+# Explicitly handle common text types
+*.html text
+*.css text
+*.js text
+*.json text
+*.md text
