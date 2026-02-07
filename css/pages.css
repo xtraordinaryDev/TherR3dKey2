@@ -51,6 +51,20 @@
   color: var(--color-white);
 }
 
+/* Dropdown over hero: solid panel + dark text so it’s visible on video */
+.page-home .site-header:not(.is-scrolled) .site-nav .has-dropdown > ul {
+  background: var(--color-white);
+  box-shadow: var(--shadow-medium);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+.page-home .site-header:not(.is-scrolled) .site-nav .has-dropdown > ul a {
+  color: var(--color-dark-text);
+}
+.page-home .site-header:not(.is-scrolled) .site-nav .has-dropdown > ul a:hover {
+  color: var(--color-trust-blue);
+  background: var(--color-light-gray);
+}
+
 .page-home .site-header .header-cta .btn-outline {
   color: var(--color-white);
   border-color: var(--color-white);
